@@ -19,3 +19,7 @@ app-todo-input {
     margin-top: 1em;
     width: 70%;
 }
+
+mat-card{
+    overflow: scroll;
+}

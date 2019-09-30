@@ -1,6 +1,6 @@
 
-<mat-list role="list" class="list">
-    <mat-list-item class="list-item" *ngFor="let items of todoListItems;let id=index">
+<mat-list role="list" class="list" cdkDropList (cdkDropListDropped)="drop($event)">
+    <mat-list-item class="list-item" *ngFor="let items of todoListItems;let id=index" cdkDrag>
         <div class="list-item-description" [ngClass]="{done: items.completed}">{{items.todo}}</div>
         <div>
             <button mat-button (click)="onTaskCheck(id)">

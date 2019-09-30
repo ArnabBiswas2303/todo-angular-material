@@ -8,6 +8,7 @@ import { TodoComponent } from './todo/todo.component';
 import { TodoInputComponent } from './todo/todo-input/todo-input.component';
 import { TodoHeaderComponent } from './todo/todo-header/todo-header.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
+import { DragDropModule } from '@angular/cdk/drag-drop'
 
 import {MatToolbarModule, MatCardModule, MatInputModule, MatButtonModule, MatExpansionModule, MatListModule,  MatIconModule} from '@angular/material';
 import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
@@ -32,7 +33,8 @@ import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
     MatButtonModule,
     MatExpansionModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
