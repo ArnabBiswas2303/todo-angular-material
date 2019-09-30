@@ -8,13 +8,12 @@ export class TodoService {
 
   constructor() { }
 
-  todoList: Todo[] = [
-   
-  ];
+  todoList: Todo[] = [];
 
   addTodo(newItem) {
+    let x = this.todoList.length;
     const newTodo: Todo = {
-      id: 0,
+      id: x,
       todo: newItem,
       completed: false
     }
@@ -26,7 +25,7 @@ export class TodoService {
   }
 
   deleteItem(index) {
-    this.todoList.splice(index);
+    this.todoList.splice(index,1);
   }
 
 }

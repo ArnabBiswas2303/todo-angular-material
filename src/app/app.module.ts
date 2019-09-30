@@ -10,6 +10,7 @@ import { TodoHeaderComponent } from './todo/todo-header/todo-header.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 
 import {MatToolbarModule, MatCardModule, MatInputModule, MatButtonModule, MatExpansionModule, MatListModule,  MatIconModule} from '@angular/material';
+import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {MatToolbarModule, MatCardModule, MatInputModule, MatButtonModule, MatExp
     TodoComponent,
     TodoInputComponent,
     TodoHeaderComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoFooterComponent
   ],
   imports: [
     BrowserModule,
